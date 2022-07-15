@@ -1,0 +1,585 @@
+*{margin: 0px;
+    padding: 0px;
+    
+}
+/* contenido general */
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(236, 247, 246);
+
+}
+header{
+    display: grid;
+    justify-content: center;
+    background-color: rgb(3, 85, 85);
+    padding-bottom: 5px;
+    
+
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+.navegacion  a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bolder;
+}
+footer{
+    background-color: rgb(130, 149, 149);
+    
+}
+.redes {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer h3{
+    padding: 5px;
+    margin-left: 30px;
+    font-size: 10px;
+}
+.contenedor-next h2{
+font-size: 18px;
+}
+.contenedor-next p{
+    font-size:13px;
+    }
+.youTube{   
+    border: solid 2px  rgb(142, 155, 144);
+    border-radius: 20px;
+    width: 250px;
+    padding: 5px;
+    margin: 5px;
+    height: auto;
+    }
+
+.indicadores{
+    border: solid 2px  rgb(142, 155, 144);
+    border-radius: 20px;
+    width: 250px;
+    padding: 5px;
+    margin: 5px;
+    height: auto;
+    }
+.indicadores p{
+    padding: 8px;
+    margin: 7px;
+}
+
+
+    /* declarar las areas */
+    header{
+        grid-area: header;
+    }
+    nav{
+        grid-area: nav;
+    }
+    .contenedor{
+        grid-area: galeria;
+    }
+    .contenedor-next{
+        grid-area: financiera;
+        
+    }
+    footer{
+        grid-area: footer;
+    }
+    /* Acomodacion de areas */
+.grillaGeneral{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "galeria"
+    "financiera"
+    "footer"
+    ;
+}
+.pictures{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 15px;
+}
+.pictures p{
+    font-size: 13px;
+}
+.finanzas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 15px;
+}
+/* media querys  celular*/
+@media (min-width:500px) {
+    .grillaGeneral{
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "galeria galeria"
+        "financiera financiera"
+        "footer footer"
+        ;
+        grid-template-columns: 1fr 1fr  ;
+    }
+    nav ul{
+        display: flex;
+        flex-flow: row;
+    }   
+    ul{
+        text-align: center;
+    }
+    .navegacion  a{      
+        font-size: 11,5px;    
+    }
+    
+    .navegacion li{
+        display:inline-block;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .pictures p{
+        font-size:15px ;
+    }
+    .contenedor-next{
+        margin-top: 15px;
+    }
+    
+    .youTube{   
+        border: solid 3,5px  rgb(142, 155, 144);
+        border-radius: 20px;
+        width: 375px;
+        padding: 7px;
+        margin: 7px;
+        height: 250px;
+        }
+
+    iframe{
+        width: 250px;
+        height: 200px;
+    }
+    .indicadores{
+        border: solid 3,5px  rgb(142, 155, 144);
+        width: 375px;
+        padding: 7px;
+        margin-top: 10px;
+        margin: 7px;
+        height: 250px;
+        }
+    .indicadores p{
+        padding: 9px;
+        margin: 8px;
+    }
+    .finanzas h2{
+        margin-top: 20px;
+    }
+    footer h3{
+        font-size: 15px;
+    }
+}
+
+/* media query tablets */
+@media (min-width:768px){
+    .grillaGeneral{
+        grid-template-areas: 
+        "header header "
+        "nav nav"
+        "galeria galeria galeria"
+        "financiera financiera"
+        "footer footer"
+        ;
+        grid-template-columns: 1fr 1fr;
+    } 
+    /* modifica tamaños para ajustar a nueva resolucion */
+    .navegacion  a{      
+        font-size: 15px;    
+    }
+    
+    .pictures{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        padding: 10px 50px;
+        
+    }
+    .pictures p{
+        font-size:20px ;
+        
+    }
+
+    .contenedor-next{
+        margin-top: 15px;
+    }    
+    .youTube{   
+        border: solid 5px  rgb(142, 155, 144);
+        border-radius: 20px;
+        width: 350px;
+        padding: 7px;
+        margin: 7px;
+        height: 250px;
+        }
+    iframe{
+        width: 250px;
+        height: 200px;
+    }
+    .indicadores{
+        border: solid 5px  rgb(142, 155, 144);
+        width: 350px;
+        padding: 7px;
+        margin-top: 10px;
+        margin: 7px;
+        height: 250px;
+        }
+    .indicadores p{
+        padding: 9px;
+        margin: 8px;
+    }
+    .finanzas{
+        padding: 15px 10px;
+    }
+    .finanzas h2{
+        margin-top: 20px;
+    }
+    .finanzas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer h3{
+        font-size: 20px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        }
+    .redes h3{
+        padding: 10px;
+        margin: 10px;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+/* media query patalla completa */
+@media (min-width:1024px){
+    .pictures img{
+        width: 500px;
+        height: 350px;
+
+    }
+    .grillaGeneral{
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "galeria galeria galeria"
+        "financiera financiera financiera"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    /* modifica tamaños para ajustar a nueva resolucion   */
+    .navegacion  a{      
+        font-size: 20px;    
+    } 
+    .pictures{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        justify-content: center;
+        padding: 10px 
+        
+        
+    } 
+    .pictures p{
+        font-size: 20px;
+    }
+    .youTube{   
+        border: solid 5px  rgb(142, 155, 144);
+        border-radius: 20px;
+        width: 500px;
+        padding: 7px;
+        margin: 7px;
+        height: 350px;
+        }
+    iframe{
+        width: 360px;
+        height: 260px;
+    }
+    .indicadores{
+        border: solid 5px  rgb(142, 155, 144);
+        width: 500px;
+        padding: 7px;
+        margin-top: 10px;
+        margin: 7px;
+        height: 350px;
+        }
+    .finanzas h2{
+        font-size: 30px;
+    }
+    .finanzas p{
+        font-size: 25px;
+    }
+    footer h3{
+        font-size: 25px ;
+    }
+    .finanzas{
+        padding: 15px ;
+    }
+
+}
+
+/* css contacto */
+form{
+    
+    width: 500px;
+    padding: 30px;
+    margin: 30px 0px 30px 50px;
+    border: solid 2px rgb(90, 88, 88);      
+}
+input{
+    margin: 20px;
+}
+select{
+    margin: 20px;
+}
+textarea{    
+    margin: 20px;
+
+}
+label{
+    
+    margin: 20px;
+    font-weight: bolder;
+
+}
+.text{
+    
+    width:360px;
+    height: 30px;
+}
+.number{
+    
+    width:100px;
+    height: 30px;
+}
+.genero{
+    margin-left: 20px;    
+}
+.telefono{
+    
+    width:300px;
+    height: 30px;
+}
+.select{
+    width:150px;
+    height: 30px;
+}
+
+/* css de nosotros */
+
+.n1{
+    grid-area: mision;
+    border: solid 5px  rgb(142, 155, 144);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px
+    }
+    .n1 p{
+        text-align: justify;
+        padding: 15px;
+        margin: 10px;
+    }
+
+.n2{
+    grid-area: vision;
+    border: solid 5px  rgb(142, 155, 144);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px
+}
+.n2 p{
+    text-align: justify;
+    padding: 15px;
+    margin: 10px;
+}
+.n2 h2{   
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+    color: rgb(62, 75, 64);    
+}
+.n3{
+    grid-area: objetivos;
+    border: solid 5px  rgb(142, 155, 144);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px
+}
+.n3 p{
+    text-align: justify;
+    padding: 15px;
+    margin: 10px;
+}
+.n3 h2{   
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+    color: rgb(62, 75, 64);    
+}
+.ley{ 
+    font-weight: bolder;
+    color: rgb(62, 75, 64);
+    padding: 15px;
+    margin: 10px; 
+}
+.ley p{
+    text-align: justify;
+}
+
+.nosotros{
+
+    display: grid;
+    grid-template-areas: 
+    ". . . mision  mision mision"
+    "vision vision vision . . . "
+    ". . . objetivos  objetivos objetivos"
+    ;
+    grid-template-columns: repeat(6 , 1fr);
+    
+}
+.listasNosotros{
+    text-align: justify;
+    padding: 20px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    
+}
+.listasNosotros li{
+    list-style:square;
+    margin-left: 60px ;
+    margin-right: 70px;
+    padding: 5px;   
+}
+
+/* css de productos */
+
+.p1{
+    grid-area: ahorros;
+    border: solid 5px  rgb(142, 155, 144);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px
+    }
+    .p1 p{
+        text-align: justify;
+        padding: 15px;
+        margin: 10px;
+    }
+
+.p2{
+    grid-area: creditos;
+    border: solid 5px  rgb(142, 155, 144);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px
+}
+.p2 p{
+    text-align: justify;
+    padding: 15px;
+    margin: 10px;
+}
+.p2 h2{   
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+    color: rgb(62, 75, 64);    
+}
+.p3{
+    grid-area: inversion;
+    border: solid 5px  rgb(142, 155, 144);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px
+}
+.p3 p{
+    text-align: justify;
+    padding: 15px;
+    margin: 10px;
+}
+.p3 h2{   
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+    color: rgb(62, 75, 64);    
+}
+
+
+.productos{
+
+    display: grid;
+    grid-template-areas: 
+    ". . . ahorros ahorros ahorros"
+    "creditos creditos creditos . . . "
+    ". . . inversion inversion inversion"
+    ;
+    grid-template-columns: repeat(6 , 1fr);
+    
+}
+/* css de enterate */
+
+.not1{
+    grid-area: not1;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px
+    }
+    .not1 p{
+        text-align: justify;
+        padding: 15px;
+        margin: 10px;
+    }
+
+.not2{
+    grid-area: not2;
+    padding: 10px;
+    margin: 20px 10px
+}
+.not2 p{
+    text-align: justify;
+    padding: 15px;
+    margin: 10px;
+}
+.not2 h2{   
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+    color: rgb(62, 75, 64);    
+}
+
+
+
+.noticias{
+    margin: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "not1"
+    "not2"
+    ;
+    grid-template-rows: 1fr;
+    
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Contactanos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navegacion">
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="productos.html">PRODUCTOS</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="enterate.html">ENTÉRATE</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTÁCTANOS</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+        <section>
+
+            <form action=""  >
+            
+                <input class="text" type="text" name="nombre_apellido" placeholder="Nombres y Apellido"> 
+                
+                <input  class="number" type="number" name="edad" placeholder="Edad" min="0" max="130"> 
+                
+                <input class="text" type="email" name="email" id="" placeholder="Correo Electronico">
+
+                <div class="genero">
+                    <div>Hombre</div>
+                    <input  type="radio" name="sexo" value="Hombre" id="">
+                    <div>Mujer</div>    
+                    <input  type="radio" name="sexo" value="Mujer" id="">          
+                </div>
+
+                <input class="telefono" type="number" name="tel" placeholder="Número de teléfono" min="0"> <br>
+                
+                <label for="producto">Escoge el producto deseado</label><br>
+                <select class="select" name="producto" id="">
+                    <option value="Ahorros">Ahorros</option>
+                    <option value="Credito">Crédito</option>
+                    <option value="Inversion">Inversíon</option>
+
+                </select>
+                <br>
+                
+                <label for="observaciones">Ingresa tus requerimientos</label><br>
+                <textarea name="observaciones" id="" cols="30" rows="10"></textarea> <br>
+                <div class="genero">Acepta términos y condiciones</div>
+                <input type="checkbox" name="acepta" value="1"> <br>
+                <input type="submit" value="Envianos tu informacíon">
+                <input type="reset" value="Borra tu informacíon">
+
+
+
+
+
+        </form>
+
+    </section>
+        <footer>
+            
+        <div class="ubicacion">
+            <h3> Direccíon General:</h3>
+
+            <h3> Calle 33c No88a-93 Medellín-Colombia</h3>
+            <h3>Lineas de ateción</h3>
+            <h3>0180098998980</h3>
+        </div> 
+        <div class="redes">
+            <h3>Redes Sociales</h3>
+            
+            <div class="social">
+                <a href="https://es-la.facebook.com/" target="_blank">
+                    <picture>
+                        <source media="(min-width:500px)" srcset="../img/3facebook.png"><img src="../img/facebook.png" alt="Imagen facebook">
+                    </picture>
+                </a> 
+            
+                <a href="https://www.instagram.com" target="_blank">
+                <picture>
+                    <source media="(min-width:500px)" srcset="../img/3instagram.png">
+                <img src="../img/instagram.png" alt="Imagen instagram"></a> 
+                <a href="https://www.twitter.com" target="_blank">
+                    <picture>
+                        <source media="(min-width:500px)" srcset="../img/3twitter.png"><img src="../img/twitter.png" alt="Imagen twitter">
+                    </picture>
+                </a> 
+                <a href="https://www.youtube.com/" target="_blank">
+                    <picture>
+                        <source media="(min-width:500px)" srcset="../img/3youtube.png"><img src="../img/youtube.png" alt="Imagen youtube">
+                    </picture>
+                </a>
+            </div> 
+        </div>    
+    </footer> 
+</body>
+</html>
